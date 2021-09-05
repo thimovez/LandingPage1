@@ -1,0 +1,13 @@
+.project {
+    padding-top: 100px;
+    &__photos {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.top {
+    margin-bottom: 30px;
+}

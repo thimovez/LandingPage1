@@ -1,6 +1,5 @@
 .slider {
     &__photo {
-        position: relative;
         width: 770px;
         height: 889px;
         margin-top: 2px;
@@ -27,22 +26,6 @@
         line-height: 64px;
         text-transform: uppercase;
     }
-    // &__button {
-    //     margin-top: 90px;
-    //     margin-right: 22px;
-    //     min-width: 53px;
-    //     min-height: 53px;
-    //     border: 1px solid #F2F2F2;
-    //     background: #fff;
-    //     &:last-child {
-    //         margin-right: 0;
-    //     }
-    //     &:hover {
-    //         cursor: pointer;
-    //         background: #F9F9F9;
-    //         transition: .3s;
-    //     }
-    // }
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -51,6 +34,9 @@
     &__logo {
         display: inline-block;
         margin-top: 335px;
+    }
+    &__right {
+        position: relative;
     }
 }
 
