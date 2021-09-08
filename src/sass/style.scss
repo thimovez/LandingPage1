@@ -59,7 +59,13 @@ p {
     margin: 0;
 }
 
+ul, li {
+	margin: 0;
+	padding: 0;
+}
+
 //link file
+@import 'base/variables.scss';
 @import 'base/mixin';
 @import 'blocks/header';
 @import 'blocks/buttons';
@@ -69,6 +75,8 @@ p {
 @import 'blocks/tasks';
 @import 'blocks/title';
 @import 'blocks/project';
+@import 'blocks/contact-us';
+@import 'blocks/footer';
 
 //container
 

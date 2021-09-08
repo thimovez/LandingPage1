@@ -1,4 +1,5 @@
 .button {
+    position: relative;
     width: 221.81px;
     height: 71px;
     color: #333;
@@ -18,6 +19,30 @@
         position: absolute;
         top: 760px;
         left: 0;
+        border: 1px solid #000;
+        &:hover {
+            color: #000 !important;
+            background-color: transparent;
+            text-shadow: nthree;
+        }
+        &:hover:before {
+            left: 0%;
+            right: auto;
+            width: 100%;
+        }
+        &::before{
+            display: block;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            height: 100%;
+            width: 0px;
+            z-index: -1;
+            content: '';
+            color: #000 !important;
+            background: #F7CA18;
+            transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+        }
     }
     &__company {
         margin-top: 21px;
@@ -42,5 +67,14 @@
         left: 45px;
         transform: translate(-50%, -50%);
         transform: scale(0);
+    }
+    &__contact-us {
+        color: #fff;
+        padding-top: 0;
+        border: none;
+        background: url(../../img/slider/ico-shapechangecolor.svg) no-repeat #333333;
+        background-position: 77%;
+        margin-top: 21px;
+        padding-right: 40px;
     }
 }
