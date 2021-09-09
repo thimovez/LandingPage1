@@ -21,6 +21,10 @@
             margin-left: 0;
             }
         }
+        img {
+            min-width: 20px;
+            height: 20px;
+        }
     }
     &__ul {
         margin-top: 25px;
@@ -35,6 +39,10 @@
             font-weight: 300;
             font-size: 14px;
             line-height: 24px;
+        }
+        img {
+            width: 20px;
+            height: 20px;
         }
     }
     &__contacts {
