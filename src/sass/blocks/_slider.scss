@@ -1,16 +1,8 @@
 .slider {
+    
     &__photo {
-        width: 770px;
-        height: 889px;
         margin-top: 2px;
-        &::before {
-            position: absolute;
-            content: '';
-            border-top: 1px solid #F2F2F2;
-            width: 270px;
-            top: 578px;
-            left: -269px;
-        }
+        
     }
     &__head {
         color: #BDBDBD;

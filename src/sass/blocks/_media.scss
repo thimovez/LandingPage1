@@ -1,0 +1,31 @@
+@media (max-width: 1170px) {
+    .container {
+        max-width: 960px;
+    }
+    .menu__item {
+        margin-right: 40px;
+    }
+    .slider-arrows {
+        display: none;
+    }
+}
+
+@media (max-width: 940px) {
+    .container {
+        max-width: 720px;
+    }
+    .slider {
+    &__photo {
+        margin-top: 2px;
+        }
+    }   
+}
+
+@media (max-width: 710px) {
+    .container {
+        max-width: 520px;
+    }
+    .menu__item {
+        margin-right: 10px;
+    }
+}

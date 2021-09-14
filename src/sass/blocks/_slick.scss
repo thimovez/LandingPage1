@@ -36,7 +36,7 @@
     z-index: 10;
 }
 
-.slider__photo .slick-arrow.slick-prev {
+.slick-arrow.slick-prev {
     left: -400px;
     top: 551px;
     font-size: 0;
@@ -51,9 +51,10 @@
     }
 }
 
-.slider__photo .slick-arrow.slick-next {
-    left: -323px;
-    top: 551px;
+.slick-arrow.slick-next {
+    position: absolute;
+    left: 78px;
+    top: 0;
     font-size: 0;
     min-width: 53px;
     min-height: 53px;
@@ -65,4 +66,17 @@
         background-color: #F9F9F9;
         transition: .3s;
     }
+    &::before {
+        position: absolute;
+        content: '';
+        border-top: 1px solid #F2F2F2;
+        width: 270px;
+        left: 52px;
+    }
+}
+
+.slider-arrows {
+    position: absolute;
+    top: 552px;
+    left: 0;
 }

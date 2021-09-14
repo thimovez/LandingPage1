@@ -1,3 +1,6 @@
+@import 'base/mixin';
+
+
 @font-face {
 	font-family: 'TTHoves';
 	src: url('../fonts/TTHoves-Regular.eot');
@@ -66,7 +69,8 @@ ul, li {
 
 //link file
 @import 'base/variables.scss';
-@import 'base/mixin';
+
+
 @import 'blocks/header';
 @import 'blocks/buttons';
 @import 'blocks/slider';
@@ -77,7 +81,7 @@ ul, li {
 @import 'blocks/project';
 @import 'blocks/contact-us';
 @import 'blocks/footer';
-
+@import 'blocks/media';
 //container
 
 .container {
