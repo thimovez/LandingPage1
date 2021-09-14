@@ -1,6 +1,6 @@
 # Link to test task:
 
-[test](https://thimovez.github.io/testinGitHubPages/)
+[test](https://thimovez.github.io/test/)
 ____
 
 ## Команды:
