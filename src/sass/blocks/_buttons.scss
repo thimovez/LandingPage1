@@ -9,7 +9,7 @@
     padding-top: 25px;
     padding-right: 20px;
     cursor: pointer;
-    background: url(../../img/slider/ico-shaperight.svg) no-repeat #fff;
+    background: url(../img/slider/ico-shaperight.svg) no-repeat #fff;
     background-position: 82%;
     a {
         text-decoration: none;
@@ -37,7 +37,7 @@
             z-index: -1;
             content: '';
             color: #000 !important;
-            background: url(../../img/slider/ico-shapechangecolor.svg) no-repeat;
+            background: url(../img/slider/ico-shapechangecolor.svg) no-repeat;
             background-color: #000;
             transition: all 0.7s cubic-bezier(0.42, 0, 0.58, 1);
             background-position: 82%;
@@ -52,7 +52,7 @@
         margin-top: 21px;
     }
     &__project {
-        background: url(../../img/slider/ico-shapechangecolor.svg) no-repeat #333333;
+        background: url(../img/slider/ico-shapechangecolor.svg) no-repeat #333333;
         color: #fff; 
         font-weight: 300;
         margin-top: 30px;
