@@ -10,27 +10,31 @@ $(document).ready(function(){
         adaptiveHeight: true,
         mobileFirst: true,
         autoplay: false,
-    //     responsive: [
-    //         {
-    //         breakpoint: 1200,
-    //         settings: {
-    //             slidesToShow: 1,
-    //             infinite: true,
-    //             autoplay: false,
-    //             dots: false
-    //         }
-    //     },
-    //     {
-    //         breakpoint: 900,
-    //         settings: {
-    //             slidesToShow: 1,
-    //             infinite: true,
-    //             autoplay: true,
-    //             autoplaySpeed: 400,
-    //             dots: true
-    //         }
-    //     },
-    // ]
+        dots: false,
+        responsive: [
+            {
+            breakpoint: 1150,
+            settings: {
+                slidesToShow: 1,
+                infinite: true,
+                autoplay: false,
+                dots: false
+            }
+        },
+        // {
+        //     breakpoint: 780,
+        //     settings: {
+        //         centerMode: true,
+        //         centerPadding: '500px',
+        //         slidesToShow: 1,
+        //         infinite: true,
+        //         autoplay: false,
+        //         autoplaySpeed: 400,
+        //         dots: true
+        //     }
+        // },
+    ]
     });
-});
 
+    new WOW().init();
+});

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -60,7 +61,7 @@
                             <img src="img/slider/slider03.jpg"   alt="slider">
                         </div>
                     </div>
-                    <div class="button button__slider"><a href="#">ВЗГЛЯНУТЬ</a></div>
+                    <div class="button button__slider dark-animation"><a href="#">ВЗГЛЯНУТЬ</a></div>
                 </div>
                 <div class="slider-arrows"></div>
             </div>
@@ -79,7 +80,7 @@
             <div class="company__info">
                 <div class="title title_gray company__head">О компании</div>
                 <div class="company__descr">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
-                <div class="button button__company">Читать</div>
+                <div class="button button__company dark-animation"><a href="">Читать</a></div>
             </div>
         </div>
            </div>
@@ -89,17 +90,17 @@
         <div class="container">
             <div class="title title_gray tasks__head">Основные задачи</div>
             <div class="tasks__main">
-                <div class="tasks__wrapper">
+                <div class="tasks__wrapper animate__animated animate__bounceInRight wow">
                     <div class="tasks__num">1</div>
                     <div class="tasks__descr">Создание комфортных условий и повышение качества обслуживания клиентов</div>
                 </div>
-                <div class="tasks__wrapper">
+                <div class="tasks__wrapper animate__animated animate__bounceInRight wow">
                     <div class="tasks__num">2</div>
                     <div class="tasks__descr">Постоянно совершенствовать качество предоставляемых услуг путем обучения персонала, закупки нового оборудования и усиленной рекламы на рынке</div>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <section class="project">
         <div class="container">
@@ -111,7 +112,7 @@
                         <div class="background-gray"></div>
                     <div class="box-img__content">
                         <div class="text">Досуговый центр</div>
-                        <div class="button button__photo">Подробнее</div>
+                        <div class="button button__photo ">Подробнее</div>
                     </div>
                     </a>
                 </div>
@@ -131,7 +132,7 @@
                     <span class="box-img__third"></span>
                 </div>
             </div>
-            <div class="button button__project">Все проекты</div>
+            <div class="button button__project light-animation"><a href="#">Все проекты</a></div>
             </div>
         </div>
     </section>
@@ -147,7 +148,7 @@
                     <input class="contact-us__product" type="text" name="product" placeholder="Интересующий товар/услуга">
                     <input class="contact-us__message" type="text" name="message" placeholder="Сообщение">
                     <div class="contact-us__politics">Отправляя заявку Вы соглашаетесь с  политикой конфиденциальности</div>
-                    <button class="button button__contact-us">Отправить</button>
+                    <button class="button button__contact-us light-animation"><a href="#">Отправить</a></button>
                 </div>
                 <div class="contact-us__photo">
                     <img src="img/contactus/contact_us.jpg" alt="contactus">
@@ -200,6 +201,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- подключаем слайдер -->
     <script src="js/slick.min.js"></script>
+    <script src="js/wow.js"></script>
     <!-- подключаем основной js файл -->
     <script src="js/script.js"></script>
 </body>

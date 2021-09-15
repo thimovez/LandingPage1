@@ -7,6 +7,7 @@
         flex-wrap: wrap;
     }
     .box-img {
+        display: flex;
         position: relative;
         width: 570px;
         height: 255px;
@@ -45,20 +46,22 @@
             position: absolute;
             top: 0;
             position: absolute;
-            transform: scale(0);
+            transform: scaleX(-1);
+            opacity: 0;
         }
         
         &:hover .text {
-            transition: .7s;
+            transition: .9s;
             transform: scale(1);
         }
         &:hover .button__photo {
-            transition: .8s;
+            transition: .9s;
             transform: scale(1);
         }
         &:hover .background-gray {
-            transition: .7s;
-            transform: scale(1);
+            transition: .9s;
+            transform: scaleX(1);
+            opacity: 100%;
         }
     }
 }
