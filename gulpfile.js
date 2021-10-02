@@ -1,6 +1,6 @@
-const gulp        = require('gulp');
+const gulp = require('gulp');
 const browserSync = require('browser-sync');
-const sass        = require('gulp-sass')(require('sass'));
+const sass = require('gulp-sass')(require('sass'));
 const cleanCSS = require('gulp-clean-css');
 const autoprefixer = require('gulp-autoprefixer');
 const rename = require("gulp-rename");
@@ -11,19 +11,21 @@ gulp.task('server', function() {
 
     browserSync({
         server: {
-            baseDir: "docs"
+            baseDir: "src"
         }
     });
 
     gulp.watch("src/*.html").on('change', browserSync.reload);
+    gulp.watch("src/js/script.js").on('change', browserSync.reload);
 });
 
 gulp.task('styles', function() {
     return gulp.src("src/sass/**/*.+(scss|sass)")
-        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-        .pipe(rename({suffix: '.min', prefix: ''}))
+        .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+        .pipe(rename({ suffix: '.min', prefix: '' }))
         .pipe(autoprefixer())
-        .pipe(cleanCSS({compatibility: 'ie8'}))
+        .pipe(cleanCSS({ compatibility: 'ie8' }))
+        .pipe(gulp.dest("src/css"))
         .pipe(gulp.dest("docs/css"))
         .pipe(browserSync.stream());
 });
@@ -33,33 +35,33 @@ gulp.task('watch', function() {
     gulp.watch("src/*.html").on('change', gulp.parallel('html'));
 });
 
-gulp.task('html', function () {
+gulp.task('html', function() {
     return gulp.src("src/*.html")
         .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest("docs/"));
 });
 
-gulp.task('scripts', function () {
+gulp.task('scripts', function() {
     return gulp.src("src/js/**/*.js")
         .pipe(gulp.dest("docs/js"));
 });
 
-gulp.task('fonts', function () {
+gulp.task('fonts', function() {
     return gulp.src("src/fonts/**/*")
         .pipe(gulp.dest("docs/fonts"));
 });
 
-gulp.task('icons', function () {
+gulp.task('icons', function() {
     return gulp.src("src/icons/**/*")
         .pipe(gulp.dest("docs/icons"));
 });
 
-gulp.task('mailer', function () {
+gulp.task('mailer', function() {
     return gulp.src("src/mailer/**/*")
         .pipe(gulp.dest("docs/mailer"));
 });
 
-gulp.task('images', function () {
+gulp.task('images', function() {
     return gulp.src("src/img/**/*")
         .pipe(imagemin())
         .pipe(gulp.dest("docs/img"));
