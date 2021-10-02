@@ -1,8 +1,3 @@
-# Link to test task:
-
-(https://thimovez.github.io/test/)
-____
-
 ## Команды:
 
 Скачивание локальных npm файлов: 
