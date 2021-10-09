@@ -77,4 +77,5 @@ gulp.task('deploy', function() {
         .pipe(ghpages());
 });
 
+
 gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'icons', 'html', 'images', 'deploy'));
