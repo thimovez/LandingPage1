@@ -72,10 +72,10 @@ gulp.task('images', function() {
         .pipe(browserSync.stream());
 });
 
-// gulp.task('deploy', function() {
-//     return gulp.src("dist/**/*")
-//         .pipe(ghpages());
-// });
+gulp.task('deploy', function() {
+    return gulp.src("dist/**/*")
+        .pipe(ghpages());
+});
 
 
-gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'icons', 'html', 'images'));
+gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'icons', 'html', 'images', 'deploy'));
